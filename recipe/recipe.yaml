@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lamindb_setup-${{ version }}.tar.gz
-  sha256: c708fcade107edc3593a17aaa55c077a865a04bd511913335057eede9e5be94b
+  sha256: ed3ec2e40ce7d3f5414e6a180a79a4b1566b132bbc6835866ea666461df77622
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - django >=5.1,<5.2
     - dj-database-url >=1.3.0,<3.0.0
     - pydantic-settings
-    - appdirs <2.0.0
+    - platformdirs <5.0.0
     - requests
     - universal_pathlib ==0.2.6
     - botocore <2.0.0
